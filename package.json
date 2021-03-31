@@ -7,5 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Toufik",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toufikos/Tini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Toufikos/Tini/issues"
+  },
+  "homepage": "https://github.com/Toufikos/Tini#readme",
+  "keywords": [],
+  "dependencies": {
+    "mongoose": "^5.12.2"
+  }
 }
