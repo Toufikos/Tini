@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/tinidb');
+mongoose.connect('mongodb://localhost:27017/tinidb');
 
 const characSchema = new mongoose.Schema({
     name: String,
@@ -13,8 +13,6 @@ const characSchema = new mongoose.Schema({
 
 const Charac = mongoose.model('Charac', characSchema);
 
-
-
 async function getCharacs(){
 
     return await Charac
@@ -26,7 +24,7 @@ async function getCharacs(){
 
 async function run(){
     const charac = new Charac({
-        name: 'Toufikos',
+        name: 'Hichamos',
         class: 'MERN',
         level: 10,
         tags: ['node', 'backend'],
